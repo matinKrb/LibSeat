@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./signUp-page-admin__pictures/book.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./signUp-page-admin__styles/style.css">
+    <title>ایجاد حساب کاربری مدیریت</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__lef-section">
+            <a href="../signUp-page/signUp-page.html" class="header__left__section_back-icon">
+                <svg width="" height="" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.14 37.6402C18.76 37.6402 18.38 37.5002 18.08 37.2002L5.94 25.0602C5.36 24.4802 5.36 23.5202 5.94 22.9402L18.08 10.8002C18.66 10.2202 19.62 10.2202 20.2 10.8002C20.78 11.3802 20.78 12.3402 20.2 12.9202L9.12 24.0002L20.2 35.0802C20.78 35.6602 20.78 36.6202 20.2 37.2002C19.92 37.5002 19.52 37.6402 19.14 37.6402Z" fill="currentColor"/>
+                    <path d="M41 25.5H7.33997C6.51997 25.5 5.83997 24.82 5.83997 24C5.83997 23.18 6.51997 22.5 7.33997 22.5H41C41.82 22.5 42.5 23.18 42.5 24C42.5 24.82 41.82 25.5 41 25.5Z" fill="currentColor"/>
+                    </svg>                                      
+            </a>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <div class="slider">
+                        <span class="ball">
+                            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <line x1="12" y1="1" x2="12" y2="3"></line>
+                                <line x1="12" y1="21" x2="12" y2="23"></line>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                <line x1="1" y1="12" x2="3" y2="12"></line>
+                                <line x1="21" y1="12" x2="23" y2="12"></line>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                            </svg>
+                            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                            </svg>
+                        </span>
+                    </div>
+                </label>
+            </div>
+        </div>
+
+
+
+        <div class="header__right-section">
+            <h1 class="header__right-section_title">LibSeat</h1>
+            <img src="./signUp-page-admin__pictures/book.svg" alt="" class="header__right-section_img">
+        </div>
+
+    </header>
+
+    <div class="header__middle-section">
+        <h1 class="heaer__middle-section_title">ایجاد حساب کاربری مدیریت</h1>
+        <p class="header__middle-section_text">اطلاعات خود را وارد کنید</p>
+    </div>
+
+    <div class="body">
+        <div class="left__body-section">
+            <img src="./signUp-page-admin__pictures/left-picture-page-light.jpg" alt="" class="left__body-section_img">
+        </div>
+
+        <div class="right__body-section">
+                <div class="right__body-section_container">
+
+                    <form class="input-wrapper">
+                        <div class="right__body-section_input">
+                            <label for="student-name" class="label">:نام و نام خوانوادگی</label>
+                            <div class="input-container">
+                               <img src="./signUp-page-admin__pictures/user.svg" alt="" class="inputs-images">
+                               <input type="text" placeholder="نام و نام خوانوادگی خود را وارد کنید" id="student-name" class="input">
+                            </div>
+                        </div>
+                       <div class="right__body-section_input">
+                           <label for="student-number" class="label">:شماره پرسنلی</label>
+                           <div class="input-container">
+                               <img src="./signUp-page-admin__pictures/Group.svg" alt="" class="inputs-images">
+                               <input type="text" placeholder="شماره پرسنلی خود را وارد کنید" id="student-number" class="input">
+                           </div>
+                       </div>
+       
+                       <div class="right__body-section_input">
+                           <label for="email" class="label">:ایمیل</label>
+                           <div class="input-container">
+                               <img src="./signUp-page-admin__pictures/email.svg" alt="" class="inputs-images">
+                               <input type="email" placeholder="ایمیل خود را وارد کنید" id="email" class="input">
+                           </div>
+                       </div>
+       
+                       <div class="right__body-section_input">
+                           <label for="password" class="label">:رمز عبور </label>
+                           <div class="input-container" id="input_password">
+    
+                               <div class="left__element_password">
+    
+                                <img src="./signUp-page-admin__pictures/password.svg" alt="" class="inputs-images">
+                                <input type="password" placeholder="رمز عبور خود را وارد کنید" id="password" class="input">   
+                               </div>
+                               <div class="see__password" id="seePass">
+                                <svg width="" height="" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.16669 19C6.33335 12.6667 11.875 9.5 19 9.5C26.125 9.5 31.6667 12.6667 34.8334 19C31.6667 25.3333 26.125 28.5 19 28.5C11.875 28.5 6.33335 25.3333 3.16669 19Z" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M19 22.9587C21.1861 22.9587 22.9584 21.1865 22.9584 19.0003C22.9584 16.8142 21.1861 15.042 19 15.042C16.8139 15.042 15.0417 16.8142 15.0417 19.0003C15.0417 21.1865 16.8139 22.9587 19 22.9587Z" stroke="currentColor" stroke-width="2"/>
+                                    </svg>                                                                      
+                               </div>
+                           </div>
+                       </div>
+       
+                       <div class="right__body-section_input">
+                           <label for="confirm-password"  class="label" >:تکرار رمز عبور</label>
+                           <div class="input-container" id="input_password">
+                               <div class="left__element_password">
+                                <img src="./signUp-page-admin__pictures/confirm-password.svg" alt="" class="inputs-images">
+                                <input type="password" placeholder="رمز عبور خود را تکرار کنید" id="confirm-password" class="input">
+                               </div>
+                               <div class="see__password" id="seeConfrimPass">
+                                <svg width="" height="" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.16669 19C6.33335 12.6667 11.875 9.5 19 9.5C26.125 9.5 31.6667 12.6667 34.8334 19C31.6667 25.3333 26.125 28.5 19 28.5C11.875 28.5 6.33335 25.3333 3.16669 19Z" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M19 22.9587C21.1861 22.9587 22.9584 21.1865 22.9584 19.0003C22.9584 16.8142 21.1861 15.042 19 15.042C16.8139 15.042 15.0417 16.8142 15.0417 19.0003C15.0417 21.1865 16.8139 22.9587 19 22.9587Z" stroke="currentColor" stroke-width="2"/>
+                                    </svg>                                                                       
+                               </div>
+                           </div>
+                       </div>
+                    </form>
+
+                    <div class="accept_rules">
+                        <input type="checkbox" name="" id="accept_rules_checkbox">
+                        <a href="#" class="checkbox_title">قوانین و شرایط</a>
+                        <p class="checkbox_text">استفاده را می پذیرم</p>
+                    </div>
+
+                    <div class="submit">
+                        <div class="sinup_btn">
+                            <button type="submit" class="submit_btn">
+                                <div class="submit_logo">
+                                        <svg width="" height="" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 17.0003C11.7733 17.0003 8.33334 13.5603 8.33334 9.33366C8.33334 5.10699 11.7733 1.66699 16 1.66699C20.2267 1.66699 23.6667 5.10699 23.6667 9.33366C23.6667 13.5603 20.2267 17.0003 16 17.0003ZM16 3.66699C12.88 3.66699 10.3333 6.21366 10.3333 9.33366C10.3333 12.4537 12.88 15.0003 16 15.0003C19.12 15.0003 21.6667 12.4537 21.6667 9.33366C21.6667 6.21366 19.12 3.66699 16 3.66699Z" fill="currentColor"/>
+                                        <path d="M4.54688 30.3333C4.00021 30.3333 3.54688 29.88 3.54688 29.3333C3.54688 23.64 9.13354 19 16.0002 19C17.3469 19 18.6669 19.1734 19.9469 19.5334C20.4802 19.68 20.7869 20.2267 20.6402 20.76C20.4936 21.2933 19.9469 21.6 19.4135 21.4534C18.3202 21.1467 17.1735 21 16.0002 21C10.2402 21 5.54688 24.7333 5.54688 29.3333C5.54688 29.88 5.09354 30.3333 4.54688 30.3333Z" fill="currentColor"/>
+                                        <path d="M25.9997 24.9736H22.013C21.4664 24.9736 21.013 24.5203 21.013 23.9736C21.013 23.427 21.4664 22.9736 22.013 22.9736H25.9997C26.5464 22.9736 26.9997 23.427 26.9997 23.9736C26.9997 24.5203 26.5464 24.9736 25.9997 24.9736Z" fill="currentColor"/>
+                                        <path d="M24 27.013C23.4533 27.013 23 26.5597 23 26.013V22.0264C23 21.4797 23.4533 21.0264 24 21.0264C24.5467 21.0264 25 21.4797 25 22.0264V26.013C25 26.573 24.5467 27.013 24 27.013Z" fill="currentColor"/>
+                                        </svg>                                                                                                                     
+                                </div>
+                                <p class="submit_title">ثبت نام مدیریت</p>
+                            </button>
+                        </div>
+
+                        <div class="login_btn">
+                            <p class="login_btn_title">حساب کاربری دارید؟</p>
+                            <a href="../login-page/login.html" class="login">ورود به حساب</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+           
+        </div>
+    </div>
+
+    <script src="./signUp-page-admin.js"></script>
+</body>
+</html>

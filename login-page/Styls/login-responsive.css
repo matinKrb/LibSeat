@@ -1,0 +1,119 @@
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+/* Tablet */
+@media (max-width: 970px) {
+
+    .container {
+        margin: 2rem auto;
+        justify-content: center;
+        gap: 3rem;
+        flex-wrap: wrap;
+    }
+
+    .top-bar {
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        padding-inline: 2rem;
+    }
+
+    .login-main{
+        justify-content: center;
+    }
+
+    .brand__name {
+        font-size: 2.8rem;
+    }
+
+    .brand__logo {
+        display: inline-flex;
+        max-width: 4.5rem;
+        min-height: 4.5rem;
+    }
+
+    .login-banner__img {
+        display: none;
+    }
+
+    .theme-switch-wrapper {
+        align-items: center;
+    }
+
+    .login-right {
+        max-width: 70rem;
+        justify-content: center;
+        padding: 3rem 3.5rem;
+    }
+
+    .login-card {
+        padding: 0 3.5rem;
+        max-width: 53rem;
+        gap: 1rem;
+    }
+
+
+}
+
+
+@media (max-width:576px) {
+
+    html {
+        font-size: 7px;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 99%;
+        margin: 6rem auto;
+        flex-wrap: wrap;
+        gap: 10rem;
+    }
+
+    .top-bar {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .login-banner {
+        display: contents;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+
+    .login-banner__img {
+        display: none;
+    }
+
+    .login-banner__img img {
+        display: none;
+    }
+
+
+    .login-right {
+        display: contents;
+        width: 100%;
+        max-width: 780px;
+        justify-content: center;
+    }
+
+    .login-form__options {
+        margin-top: 2.3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .login-banner-info,
+    .login-banner__info-icon,
+    .login-hero__info-title,
+    .login-hero__info-sub {
+        display: none;
+    }
+
+    .btn-login--icon {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+}

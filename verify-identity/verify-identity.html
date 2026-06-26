@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تایید هویت</title>
+    <link rel="icon" type="image/png" href="./icons/logo.png">
+    <link rel="stylesheet" href="./Styls/reset.css">
+    <link rel="stylesheet" href="./Styls/fonts.css">
+    <link rel="stylesheet" href="./Styls/verify-identity-style.css">
+    <link rel="stylesheet" href="./Styls/verify-responsive.css">
+    <script src="./scripts/verify-them.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <!-- top bar -->
+            <div class="top-bar">
+                <div class="brand">
+                    <a href="../index.html" class="brand__name">LibSeat</a>
+                    <a href="../index.html" class="brand__logo-link">
+                        <img src="./icons/logo.svg" alt="LibSeat" class="brand__logo">
+                    </a>
+                </div>
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox">
+                        <div class="slider">
+                            <span class="ball">
+                                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"></circle>
+                                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                </svg>
+                                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <!-- Banner -->
+            <section class="banner">
+                <div class="banner__img">
+                    <img src="./Images/verify-identity.jpg" alt="تایید هویت" loading="lazy">
+                </div>
+            </section>
+
+            <!-- Verification Card -->
+            <div class="verify__card card">
+                <div class="card__header">
+                    <h2 class="card__title">تایید هویت و تنظیم رمز عبور جدید</h2>
+                    <p class="card__description">
+                        کد تایید ارسال شده به شماره
+                        <span class="phone-number" id="phoneNumber">0913****27</span>
+                        را وارد کنید.
+                    </p>
+                </div>
+
+                <form class="verify-form" id="verifyForm" novalidate>
+                    <!-- Verification Code -->
+                    <div class="form-group">
+                        <label class="form-label">کد تایید :</label>
+                        <div class="verification-code">
+                            <input type="text" class="verification-code__input" maxlength="1" data-index="0"
+                                inputmode="numeric" pattern="[0-9]">
+                            <input type="text" class="verification-code__input" maxlength="1" data-index="1"
+                                inputmode="numeric" pattern="[0-9]">
+                            <input type="text" class="verification-code__input" maxlength="1" data-index="2"
+                                inputmode="numeric" pattern="[0-9]">
+                            <input type="text" class="verification-code__input" maxlength="1" data-index="3"
+                                inputmode="numeric" pattern="[0-9]">
+                            <input type="text" class="verification-code__input" maxlength="1" data-index="4"
+                                inputmode="numeric" pattern="[0-9]">
+                            <input type="text" class="verification-code__input" maxlength="1" data-index="5"
+                                inputmode="numeric" pattern="[0-9]">
+                        </div>
+                        <span class="form-error" id="codeError"></span>
+                    </div>
+
+                    <!-- New Password -->
+                    <div class="form-group">
+                        <label for="newPassword" class="form-label">رمز عبور جدید :</label>
+                        <div class="form-input-wrapper">
+                            <input type="password" id="newPassword" name="newPassword" class="form-input"
+                                placeholder="رمز عبور جدید را وارد کنید." autocomplete="new-password" required>
+                            <span class="input-icon input-icon--lock" aria-hidden="true"></span>
+                            <button type="button" class="input-eye" aria-label="نمایش رمز عبور"></button>
+                        </div>
+                        <span class="form-error" id="newPasswordError"></span>
+                    </div>
+
+                    <!-- Confirm Password -->
+                    <div class="form-group">
+                        <label for="confirmPassword" class="form-label">تکرار رمز عبور جدید :</label>
+                        <div class="form-input-wrapper">
+                            <input type="password" id="confirmPassword" name="confirmPassword" class="form-input"
+                                placeholder="رمز عبور جدید را مجدداً وارد کنید." autocomplete="new-password" required>
+                            <span class="input-icon input-icon--lock" aria-hidden="true"></span>
+                            <button type="button" class="input-eye" aria-label="نمایش رمز عبور"></button>
+                        </div>
+                        <span class="form-error" id="confirmPasswordError"></span>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <a href="#" type="submit" class="btn btn--primary" id="submitBtn">
+                        <span class="btn__text">تغییر رمز عبور</span>
+                        <span class="btn__loader"></span>
+                    </a>
+
+                    <!-- Resend Code -->
+                    <div class="resend-code">
+                        <button type="button" class="resend-code__btn" id="resendBtn">
+                            ارسال مجدد کد
+                            <span class="timer" id="timer">(0:56)</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+
+</html>

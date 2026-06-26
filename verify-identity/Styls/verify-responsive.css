@@ -1,0 +1,305 @@
+/* ========================================
+   Tablet (970px and below)
+   ======================================== */
+@media (max-width: 970px) {
+    .container {
+        margin: 2rem auto;
+        gap: 3rem;
+        flex-wrap: wrap;
+
+    }
+
+    .top-bar {
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        padding-inline: 2rem;
+    }
+
+    .brand__name {
+        font-size: 2.8rem;
+    }
+
+    .brand__logo {
+        display: inline-flex;
+        max-width: 4.5rem;
+        min-height: 4.5rem;
+    }
+
+    .main {
+        flex-direction: column;
+        gap: var(--spacing-xl);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .card {
+        max-width: 70rem;
+        gap: 1rem;
+    }
+
+    .card__title {
+        font-size: 3rem;
+        font-weight: 550;
+    }
+
+    .card__description {
+        font-size: 1.7rem;
+    }
+
+    .form-label,
+    .btn {
+        font-size: 2rem;
+    }
+
+    .form-input {
+        font-size: 2rem;
+        height: 5.5rem;
+    }
+
+    .verify-form {
+        gap: var(--spacing-xl);
+    }
+
+    .verification-code__input {
+        height: 5.5rem;
+        font-size: 2.2rem;
+    }
+
+    .verification-code {
+        gap: var(--spacing-md);
+    }
+
+    .resend-code__btn {
+        font-size: 1.9rem;
+    }
+
+    .input-eye {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+/* ========================================
+   Mobile (576px and below)
+   ======================================== */
+@media (max-width: 480px) {
+    body {
+        background-color: var(--color-bg-card);
+    }
+
+    .container {
+        padding: var(--spacing-2xl);
+        margin: 0;
+    }
+
+    /* Header */
+    .top-bar {
+        justify-content: space-between;
+        gap: var(--spacing-sm);
+        padding: var(--spacing-xs);
+    }
+
+    .brand {
+        gap: var(--spacing-xs);
+        min-height: auto;
+    }
+
+    .brand__name {
+        font-size: 2.8rem;
+        font-weight: 500;
+    }
+
+    .brand__logo {
+        max-width: 4.5rem;
+        min-height: 4.5rem;
+    }
+
+    .theme-switch {
+        height: 3rem;
+        width: 5.5rem;
+    }
+
+    .ball {
+        height: 2.6rem;
+        width: 2.6rem;
+    }
+
+    .sun-icon,
+    .moon-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    input:checked+.slider .ball {
+        transform: translateX(2.6rem);
+    }
+
+    /* Main Content */
+    .main {
+        padding: 0;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .card {
+        padding: var(--spacing-lg) var(--spacing-md);
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        padding-top: 2rem;
+        max-width: 100%;
+    }
+
+    .card__header {
+        margin-bottom: var(--spacing-lg);
+        gap: var(--spacing-md);
+    }
+
+    .card__title {
+        font-size: 2.8rem;
+        font-weight: 500;
+    }
+
+    .card__description {
+        font-size: 1.6rem;
+        line-height: 1.8;
+    }
+
+    .phone-number {
+        margin-top: var(--spacing-xs);
+    }
+
+    /* Form */
+    .verify-form {
+        gap: var(--spacing-md);
+        margin: 0;
+    }
+
+    .form-group {
+        gap: var(--spacing-sm);
+    }
+
+    .form-label {
+        font-size: 2rem;
+    }
+
+    /* Verification Code */
+    .verification-code {
+        gap: var(--spacing-md);
+    }
+
+    .verification-code__input {
+        height: 5rem;
+        font-size: 2rem;
+        border-radius: var(--radius-md);
+    }
+
+    /* Password Inputs */
+    .form-input {
+        height: 4.5rem;
+        padding: 0 3.5rem 0 var(--spacing-sm);
+        font-size: 2rem;
+    }
+
+    .form-input::placeholder {
+        font-size: 1.6rem;
+    }
+
+    .input-eye {
+        width: 2.2rem;
+        height: 2.2rem;
+        left: 1rem;
+        background-size: 18px;
+    }
+
+    .input-icon--lock {
+        display: none;
+    }
+
+    /* Error Messages */
+    .form-error {
+        font-size: 1.3rem;
+        min-height: 1.5rem;
+    }
+
+    /* Button */
+    .btn {
+        height: 4.5rem;
+        font-size: 2rem;
+        margin-top: var(--spacing-md);
+        border-radius: var(--radius-lg);
+    }
+
+    .btn__loader {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* Resend Code */
+    .resend-code {
+        margin-top: var(--spacing-sm);
+    }
+
+    .resend-code__btn {
+        font-size: 1.6rem;
+        padding: var(--spacing-xs);
+    }
+
+    .timer {
+        font-size: 1.6rem;
+    }
+}
+
+/* ========================================
+   Extra Small Mobile (400px and below)
+   ======================================== */
+@media (max-width: 400px) {
+    .brand__name {
+        font-size: 2.4rem;
+    }
+
+    .brand__logo {
+        max-width: 3.5rem;
+        min-height: 3.5rem;
+    }
+
+    .card__title {
+        font-size: 2.4rem;
+    }
+
+    .card__description {
+        font-size: 1.4rem;
+    }
+
+    .form-label {
+        font-size: 1.8rem;
+    }
+
+    .verification-code {
+        gap: 0.4rem;
+    }
+
+    .verification-code__input {
+        font-size: 1.8rem;
+    }
+
+    .form-input {
+        height: 4.2rem;
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        height: 4.2rem;
+        font-size: 1.8rem;
+    }
+
+    .resend-code__btn {
+        font-size: 1.5rem;
+    }
+}

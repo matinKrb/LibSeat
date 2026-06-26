@@ -1,0 +1,558 @@
+/* verify-identity-style.css */
+
+/* ==================== CSS Variables ==================== */
+:root {
+    /* Colors - Light Theme */
+    --color-primary: #2563EB;
+    --color-primary-hover: #0234a0;
+    --color-primary-active: #38028e;
+    --color-success: #10b981;
+    --color-error: #f07777df;
+
+    /* Background Colors */
+    --color-bg-body: #E8EEFC;
+    --color-bg-card: #ffffff;
+    --color-bg-input: #F8F8F8;
+    --color-bg-input-hover: #f8fafc;
+
+    /* Text Colors */
+    --color-text-primary: #3B3735;
+    --color-text-secondary: #594f4fc2;
+    --color-text-inverse: #ffffff;
+
+    /* Border Colors */
+    --color-border: #e2e8f0;
+    --color-border-hover: #cbd5e1;
+    --color-border-focus: #6366f1;
+    --color-border-error: #ef4444;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+    --shadow-card: 0px 0px 18px 1px rgba(0, 0, 0, 0.219);
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 0.75rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 2.5rem;
+
+    /* Border Radius */
+    --radius-sm: 0.375rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
+    --radius-full: 9999px;
+
+    /* Transitions */
+    --transition-fast: 150ms ease;
+    --transition-base: 200ms ease;
+    --transition-slow: 300ms ease;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    --color-bg-body: #020D23;
+    --color-bg-card: #020D23;
+    --color-bg-input: #111827;
+    --color-bg-input-hover: #455a70;
+
+    --color-text-primary: #f1f5f9;
+    --color-text-secondary: #f1f5f9;
+
+    --color-border: #334155;
+    --color-border-hover: #475569;
+
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.5);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.6);
+    --shadow-card: inset 0px 0px 20px 1px rgb(16 43 107 / 59%);
+
+}
+
+/* ==================== Base Styles ==================== */
+body {
+    min-height: 95vh;
+    background-color: var(--color-bg-body);
+    color: var(--color-text-primary);
+    font-family: "VazirMatn", "Vazir", Tahoma, sans-serif;
+    line-height: 1.6;
+}
+
+/* ==================== Container ==================== */
+.container {
+    width: 97vw;
+    margin: 1rem 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: normal;
+    min-height: inherit;
+}
+
+/* ========================================
+    Top Bar
+   ======================================== */
+.top-bar {
+    position: relative;
+    width: auto;
+    min-height: 5rem;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 1.6rem;
+    justify-content: end;
+    order: -1;
+}
+
+/* brand */
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 15.7rem;
+    min-height: 5rem;
+    gap: 0.2rem;
+}
+
+.brand__logo {
+    display: inline-flex;
+    max-width: 5rem;
+    min-height: 5rem;
+    object-fit: contain;
+}
+
+.brand__name {
+    font-size: 3.2rem;
+    align-items: center;
+    line-height: 2.5;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    letter-spacing: 0%;
+    transition: color var(--transition);
+}
+
+/* theme button */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 3rem;
+    width: 6rem;
+    position: relative;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #e2e8f0;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: background-color 0.4s ease;
+    border-radius: 3.4rem
+}
+
+.ball {
+    background-color: white;
+    border-radius: 50%;
+    height: 2.4rem;
+    width: 2.4rem;
+    position: absolute;
+    left: 0.3rem;
+    bottom: 0.3rem;
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+}
+
+.sun-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+    color: #f59e0b;
+    display: block;
+}
+
+.moon-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+    color: #f8fafc;
+    display: none;
+}
+
+input:checked+.slider {
+    background-color: #334155;
+}
+
+input:checked+.slider .ball {
+    transform: translateX(3rem);
+    background-color: #1e293b;
+}
+
+input:checked+.slider .ball .sun-icon {
+    display: none;
+}
+
+input:checked+.slider .ball .moon-icon {
+    display: block;
+}
+
+/* ==================== Main Layout ==================== */
+.main {
+    display: flex;
+    align-items: normal;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    padding: 0 3.5rem;
+}
+
+/* ==================== Banner ==================== */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 var(--spacing-lg);
+}
+
+.banner__img {
+    width: 100%;
+    max-width: 68rem;
+    aspect-ratio: 1 / 1;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    transition: all var(--transition-base);
+}
+
+.banner__img:hover {
+    transform: scale(1.02);
+}
+
+.banner__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* ==================== Card ==================== */
+.card {
+    background-color: var(--color-bg-card);
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-card);
+    padding: 5rem var(--spacing-2xl) 3rem;
+    transition: all var(--transition-base);
+    width: 57rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    padding-top: 5rem;
+}
+
+.card__header {
+    margin-bottom: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.card__title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-sm);
+    text-align: center;
+}
+
+.card__description {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    line-height: 1;
+    text-align: center;
+}
+
+.phone-number {
+    display: inline-block;
+    font-weight: 300;
+    color: var(--color-text-primary);
+    direction: ltr;
+    unicode-bidi: plaintext;
+}
+
+/* ==================== Form ==================== */
+.verify-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin: 0.3rem 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.form-label {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: var(--color-text-primary);
+}
+
+/* Verification Code Inputs */
+.verification-code {
+    display: flex;
+    gap: var(--spacing-lg);
+    direction: ltr;
+}
+
+.verification-code__input {
+    flex: 1;
+    height: 5.8rem;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background-color: var(--color-bg-input);
+    color: var(--color-text-primary);
+    transition: all var(--transition-base);
+    outline: none;
+    width: 0.4rem;
+}
+
+.verification-code__input:hover {
+    border-color: var(--color-border-hover);
+    background-color: var(--color-bg-input-hover);
+}
+
+.verification-code__input:focus {
+    border-color: var(--color-border-focus);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+    transform: scale(1.05);
+}
+
+.verification-code__input.filled {
+    border-color: var(--color-success);
+    background-color: rgba(16, 185, 129, 0.05);
+}
+
+.verification-code__input.error {
+    border-color: var(--color-border-error);
+    background-color: rgba(239, 68, 68, 0.05);
+}
+
+/* Password Input */
+.form-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form-input {
+    width: 100%;
+    height: 5.9rem;
+    padding: 0 var(--spacing-xl);
+    font-size: 2.5rem;
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background-color: var(--color-bg-input);
+    color: var(--color-text-primary);
+    transition: all var(--transition-base);
+    outline: none;
+}
+
+.form-input::placeholder {
+    color: var(--color-text-secondary);
+    font-size: 1.8rem;
+    opacity: 0.7;
+}
+
+.form-input:hover {
+    border-color: var(--color-border-hover);
+    background-color: var(--color-bg-input-hover);
+}
+
+.form-input:focus {
+    border-color: var(--color-border-focus);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.form-input.error {
+    border-color: var(--color-border-error);
+}
+
+/* Toggle Password Button */
+.input-eye {
+    position: absolute;
+    left: 1.4rem;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    background: url('../icons/eye.svg') no-repeat center / 20px;
+    opacity: 0.58;
+    transition:
+        opacity var(--transition),
+        transform var(--transition);
+    flex-shrink: 0;
+     cursor: pointer;
+    z-index: 5;
+}
+
+.input-eye:focus {
+    outline: none;
+}
+.input-eye:hover {
+    opacity: .8;
+    transform: scale(1.12);
+}
+
+.input-eye.is-visible {
+    background-image: url('../icons/eye-slash.svg');
+    opacity: .7;
+}
+
+/* Error Message */
+.form-error {
+    font-size: 1rem;
+    color: var(--color-error);
+    min-height: 1rem;
+    display: block;
+    margin-top: var(--spacing-xs);
+}
+
+/* ==================== Buttons ==================== */
+.btn {
+    position: relative;
+    width: 100%;
+    height: 5.8rem;
+    padding: 0 var(--spacing-lg);
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    border-radius: var(--radius-xl);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin-top: 1.5rem;
+    line-height: 3rem;
+}
+
+.btn--primary {
+    background-color: var(--color-primary);
+    color: var(--color-text-inverse);
+    box-shadow: var(--shadow-md);
+}
+
+.btn--primary:hover:not(:disabled) {
+    background-color: var(--color-primary-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.btn--primary:active:not(:disabled) {
+    background-color: var(--color-primary-active);
+    transform: translateY(0);
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btn__loader {
+    display: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+.btn.loading .btn__text {
+    opacity: 0;
+}
+
+.btn.loading .btn__loader {
+    display: block;
+    position: absolute;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ==================== Resend Code ==================== */
+.resend-code {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--spacing-md);
+}
+
+.resend-code__btn {
+    background: none;
+    border: none;
+    color: var(--color-primary);
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: color var(--transition-base);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-sm);
+}
+
+.resend-code__btn:hover:not(:disabled) {
+    color: var(--color-primary);
+}
+
+.resend-code__btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.timer {
+    font-weight: 600;
+    color: var(--color-primary);
+    direction: ltr;
+    unicode-bidi: plaintext;
+}
+
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

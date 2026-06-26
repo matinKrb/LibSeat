@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود به سامانه</title>
+    <link rel="icon" type="image/png" href="./icons/logo.png">
+    <link rel="stylesheet" href="./Styls/reset.css">
+    <link rel="stylesheet" href="./Styls/fonts.css">
+    <link rel="stylesheet" href="./Styls/login-style.css">
+    <link rel="stylesheet" href="./Styls/login-responsive.css">
+    <script src="./scripts/theme.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- top bar -->
+        <div class="top-bar">
+            <div class="brand">
+                <a href="../index.html" class="brand__name">LibSeat</a>
+                <a href="../index.html" class="brand__logo-link">
+                    <img src="./icons/logo.svg" alt="LibSeat" class="brand__logo">
+                </a>
+            </div>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <div class="slider">
+                        <span class="ball">
+                            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <line x1="12" y1="1" x2="12" y2="3"></line>
+                                <line x1="12" y1="21" x2="12" y2="23"></line>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                <line x1="1" y1="12" x2="3" y2="12"></line>
+                                <line x1="21" y1="12" x2="23" y2="12"></line>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                            </svg>
+                            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                            </svg>
+                        </span>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <main class="login-main">
+            <!-- ستون راست: فرم -->
+            <div class="login-right">
+                <div class="login-card">
+
+                    <div class="login-card__header">
+                        <h1 class="login-card__title">خوش آمدید</h1>
+                        <p class="login-card__subtitle">
+                            برای ادامه وارد حساب کاربری خود شوید.
+                        </p>
+                    </div>
+                    <div class="role-tabs">
+                        <button type="button" class="role-tab role-tab__active" data-role="student"
+                            id="student-roleTab">
+                            <img src="./icons/student.svg" alt=""> دانشجو
+                        </button>
+                        <button type="button" class="role-tab " data-role="admin" id="admin-roleTab">
+                            <img src="./icons/admin.svg" alt=""> مدیریت (ادمین)
+                        </button>
+
+                    </div>
+
+
+                    <form class="login-form login-form__student login-form__active" novalidate>
+
+                        <div class="form-group">
+                            <label class="form-label" for="studentId">
+                                شماره دانشجویی :
+                            </label>
+                            <div class="input-wrap">
+                                <input type="text" id="studentId" name="studentId" inputmode="numeric" pattern="[0-9]*"
+                                    autocomplete="student-id" class="form-input student-id"
+                                    placeholder="شماره دانشجویی خود را وارد کنید ">
+                                <span class="input-icon input-icon--user" aria-hidden="true"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="password">
+                                رمز عبور :
+                            </label>
+                            <div class="input-wrap">
+                                <input type="password" id="password" name="password" autocomplete="current-password"
+                                    class="form-input password-student" placeholder="رمز عبور خود را وارد کنید">
+                                <span class="input-icon input-icon--lock" aria-hidden="true"></span>
+                                <button type="button" class="input-eye input-eye-student"
+                                    aria-label="نمایش رمز عبور"></button>
+                            </div>
+                        </div>
+
+                        <div class="login-form__options">
+                            <label class="remember-me">
+                                <input type="checkbox" class="remember-me__check">
+                                <span>مرا به خاطر بسپار</span>
+                            </label>
+                            <a href="../ForgotPass/ForgotPass.html" class="forgot-pass">
+                                رمز عبور خود را فراموش کرده‌اید؟
+                            </a>
+                        </div>
+
+                        <button type="submit" class="btn-login">
+                            ورود
+                            <span class="btn-login--icon" aria-hidden="true"></span>
+                        </button>
+
+                    </form>
+
+                    <form action="#" class="login-form login-form__admin ">
+
+                        <div class="form-group">
+                            <label class="form-label" for="adminId">
+                                نام کاربری :
+                            </label>
+                            <div class="input-wrap">
+                                <input type="text" id="adminId" name="adminId" autocomplete="student-id"
+                                    class="form-input student-id" placeholder=" نام کاربری خود را وارد کنید ">
+                                <span class="input-icon input-icon--user" aria-hidden="true"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="password">
+                                رمز عبور :
+                            </label>
+                            <div class="input-wrap">
+                                <input type="password" id="password" name="password" autocomplete="current-password"
+                                    class="form-input password-admin" placeholder="رمز عبور خود را وارد کنید">
+                                <span class="input-icon input-icon--lock" aria-hidden="true"></span>
+                                <button type="button" class="input-eye input-eye-admin"
+                                    aria-label="نمایش رمز عبور"></button>
+                            </div>
+                        </div>
+
+                        <div class="login-form__options">
+                            <label class="remember-me">
+                                <input type="checkbox" class="remember-me__check">
+                                <span>مرا به خاطر بسپار</span>
+                            </label>
+                            <a href="../ForgotPass/ForgotPass.html" class="forgot-pass">
+                                رمز عبور خود را فراموش کرده‌اید؟
+                            </a>
+                        </div>
+
+                        <button type="submit" class="btn-login">
+                            ورود
+                            <span class="btn-login--icon" aria-hidden="true"></span>
+                        </button>
+
+                    </form>
+
+                    <p class="register-prompt">
+                        حساب کاربری ندارید؟
+                        <a href="../signUp-page/signUp-page.html" class="register-prompt__link">ثبت‌نام کنید</a>
+                    </p>
+
+
+                </div>
+            </div>
+            <!-- /login-right -->
+
+
+            <!-- ستون چپ: بنر -->
+            <div class="login-banner">
+
+                <div class="login-banner__img">
+                    <img src="./Images/login-banner.jpg" alt="سامانه رزرو صندلی کتابخانه"
+                        class="login-banner__img-img">
+                </div>
+
+
+            </div>
+            <!-- /login-banner -->
+        </main>
+        <div class="login-banner-info">
+            <span class="login-banner__info-icon">
+                <img src="./icons/login-banner__info-icon.svg" alt="">
+            </span>
+            <div>
+                <p class="login-hero__info-title">سیستم رزرو صندلی</p>
+                <p class="login-hero__info-sub">
+                    کتابخانه دانشگاه شهید باهنر کرمان
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

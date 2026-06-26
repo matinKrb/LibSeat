@@ -1,0 +1,302 @@
+@media screen and (max-width:1400px) {}
+
+@media screen and (max-width:1300px) {
+
+
+    .admin {
+        flex-basis: 268px;
+        height: 296px;
+    }
+
+    .student {
+        flex-basis: 268px;
+        height: 296px;
+    }
+
+    .img {
+        flex-basis: 590px;
+    }
+
+    .main__title_h1 {
+        font-size: 28px;
+    }
+
+    .choase__who__title_text {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .student_title {
+        font-size: 25px;
+        line-height: 26px;
+    }
+
+    .student_text {
+        font-size: 18px;
+        line-height: 31px;
+    }
+
+    .admin_title {
+        font-size: 25px;
+        line-height: 26px;
+    }
+
+    .admin_text {
+        font-size: 18px;
+        line-height: 31px;
+    }
+
+    @media screen and (max-width:1200px) {}
+
+}
+
+@media screen and (max-width:1100px) {
+
+    .student_conteaneer {
+        height: auto;
+    }
+
+    .student {
+        flex-basis: 228px;
+        height: 266px;
+    }
+
+    .admin {
+        flex-basis: 228px;
+        height: 266px;
+    }
+
+    .student_title {
+        font-size: 25px;
+        line-height: 26px;
+    }
+
+    .student_text {
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 12px;
+    }
+
+    .admin_title {
+        font-size: 25px;
+        line-height: 26px;
+    }
+
+    .admin_text {
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 12px;
+    }
+
+    .admin_container {
+        height: auto;
+    }
+
+    .main {
+        margin-top: 110px;
+    }
+
+    .img {
+        flex-basis: 520px;
+    }
+
+}
+
+@media screen and (max-width:992px) {
+    .admin {
+        padding: 0;
+        flex-basis: 308px;
+        height: 356px;
+    }
+
+    .admin_title {
+        font-size: 23px;
+    }
+
+    .admin_text {
+        font-size: 18px;
+    }
+
+    .student {
+        padding: 0;
+        flex-basis: 308px;
+        height: 356px;
+    }
+
+    .student_title {
+        font-size: 23px;
+    }
+
+    .student_text {
+        font-size: 18px;
+    }
+
+    .img {
+        display: none;
+
+    }
+
+    .main__choase-who {}
+
+    .main {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .main__choase-who {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .student-and-admin {
+        flex-direction: column-reverse;
+        gap: 40px;
+        width: 100%;
+    }
+
+    .header__title-svg {
+        display: none;
+    }
+
+    .header__title {
+        display: none;
+    }
+
+    .header__title-in-mobile {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .header__img-mobile {
+        display: inline-block;
+        left: 0;
+    }
+
+    .header__title-mobile {
+        display: inline-block;
+        font-size: 24px;
+        line-height: 34px;
+        color: var(--text-color);
+        margin-left: 70px;
+    }
+
+    .header__img__title_container {
+        display: flex;
+        flex-direction: left;
+        position: absolute;
+        left: 0;
+        margin-left: 40px;
+    }
+
+    .header {
+        justify-content: center;
+        display: flex;
+        width: 100%;
+    }
+
+    .header__container {
+        width: 100%;
+    }
+
+    .admin {
+        width: 65%;
+        height: 296px;
+        margin-left: 0;
+    }
+
+    .admin_text {
+        width: 400px;
+        font-size: 18px;
+    }
+
+    .student {
+        width: 65%;
+        height: 296px;
+        margin-right: 0;
+    }
+
+    .student_text {
+        width: 360px;
+        font-size: 18px;
+    }
+
+    .choase-who_title {
+        display: none;
+    }
+
+    .main__choase-who {}
+
+    .footer {
+        display: none;
+    }
+
+    .header {
+        margin-top: 20px;
+    }
+
+
+}
+
+@media screen and (max-width:688px) {
+    .main__choase-who {}
+
+    .theme-switch-wrapper {
+        transform: scale(0.55);
+    }
+}
+
+@media screen and (max-width:576px) {
+    .header__title-mobile {
+        font-size: 20px;
+    }
+
+    .admin {
+        width: 85%;
+
+    }
+
+    .admin_container {
+        width: 100%;
+    }
+
+    .admin_title {
+        font-size: 22px;
+    }
+
+    .admin_text {
+        font-size: 16px;
+        margin-top: 6px;
+        width: 99%;
+    }
+
+    .student {
+        width: 85%;
+    }
+
+    .student_conteaneer {
+        width: 100%;
+    }
+
+    .student_title {
+        font-size: 22px;
+    }
+
+    .student_text {
+        font-size: 16px;
+        margin-top: 6px;
+        width: 99%;
+    }
+
+    .main__choase-who {}
+}
+
+@media screen and (max-width:531px) {
+    .main__choase-who {}
+}

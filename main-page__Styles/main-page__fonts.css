@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "VazirMatn-medium";
+    src: url(../fonts/Vazir-Medium.ttf);
+}
+@font-face {
+    font-family: "VazirMatn";
+    src: url(../main-page__fonts/Vazir.ttf);
+}
+@font-face {
+    font-family: "VazirMatn-bold";
+    src: url(../fonts/Vazir-Bold.ttf);
+}
+@font-face {
+    font-family: "VazirMatn-light";
+    src: url(../fonts/Vazir-Light.ttf);
+}

@@ -1,0 +1,379 @@
+@font-face{
+    font-family: 'vazirfont';
+    src: url(../signUp-page__fonts/Vazirmatn-Regular.ttf);
+}
+
+body{
+    font-family: 'vazirfont';
+}
+
+:root{
+    --primary-bg-color:#EEF2FA;
+    --text-color:#3B3735;
+    --bg-color:#ffffff;
+    --text-color-dark:#3B3735;
+    --hover-color:#EEF2FA;
+    --student-and-admin-bg-color:rgba(255, 255, 255, 1);
+    
+}
+
+[data-theme="dark"]{
+    --primary-bg-color: #020D21;
+    --text-color:#F8FAFC;
+    --text-color-dark:#F8FAFC;
+    --hover-color:#0e224e;
+    --student-and-admin-bg-color:rgba(2, 13, 29, 1);
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--primary-bg-color);
+}
+
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    transform: scale(0.55);
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 3rem;
+    width: 6rem;
+    position: relative;
+}
+
+
+.theme-switch input {
+    display: none;
+}
+
+
+.slider {
+    background-color: #e2e8f0;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: background-color 0.4s ease;
+    border-radius: 3.4rem;
+    /* 34px */
+}
+
+
+.ball {
+    background-color: white;
+    border-radius: 50%;
+    height: 2.4rem;
+    /* 24px */
+    width: 2.4rem;
+    /* 24px */
+    position: absolute;
+    left: 0.3rem;
+    /* 3px */
+    bottom: 0.3rem;
+    /* 3px */
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+}
+
+
+.sun-icon {
+    width: 1.6rem;
+    /* 16px */
+    height: 1.6rem;
+    color: #f59e0b;
+    display: block;
+}
+
+.moon-icon {
+    width: 1.6rem;
+    /* 16px */
+    height: 1.6rem;
+    color: #f8fafc;
+    display: none;
+}
+
+
+
+
+input:checked+.slider {
+    background-color: #334155;
+}
+
+
+input:checked+.slider .ball {
+    transform: translateX(3rem);
+    background-color: #1e293b;
+}
+
+
+input:checked+.slider .ball .sun-icon {
+    display: none;
+}
+
+input:checked+.slider .ball .moon-icon {
+    display: block;
+}
+
+.header{
+ display: block;
+ height: 50px;
+ margin-left: 80px;
+}
+
+.header__container{
+ display: flex;
+ direction: ltr;
+ align-items: center;
+ 
+}
+
+.header__title-svg{
+ margin-left: 10px;
+ width: 40px;
+ height: 40px;
+}
+
+.header__title{
+ margin-left: 10px;
+ margin-right: -5px;
+ font-weight: bold;
+ font-size: 23px;
+ color: var(--text-color);
+}
+
+.header__title-in-mobile{
+    display: none;
+}
+
+.header__img__title_container{
+    display: none;
+}
+
+.header__img-mobile{
+    display: none;
+}
+
+.header__title-mobile{
+    display: none;
+}
+
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.main__choase-who{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 786px;
+    flex-shrink: 1;
+}
+
+.choase-who_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.choase__who__title_container{
+    display: flex;
+    align-items: center;
+}
+
+.main__title_h1{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+    color: var(--text-color);
+}
+
+#main__title_h1--main{
+    margin: 0 10px;
+}
+
+
+.choase__who__title_text{
+    margin-bottom: 60px;
+    margin-top: 0;
+    font-size: 22px;
+    color: var(--text-color);
+}
+
+.student-and-admin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    min-width: 100%;
+
+}
+
+.admin{
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    background-color: var(--student-and-admin-bg-color);
+    flex-basis: 338px;
+    flex-shrink: 1;
+    height: 316px;
+    padding: 20px;
+    border: 3px solid #2563EB;
+    border-radius: 40px;
+
+}
+
+:hover.admin{
+    transform: scale(1.04);
+    transition: all 250ms ease-in;
+    background-color: var(--hover-color);
+}
+
+.admin_container{
+    justify-content: center;
+    width: 240px;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.admin_img{
+    width: 138px;
+    height: 110px;
+}
+
+.admin_title{
+ margin: 0;
+ margin-top: 30px;
+ color: var(--text-color-dark);
+ font-size: 23px;
+}
+
+.admin_text{
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--text-color-dark);
+    font-style: normal;
+    text-align: center;
+}
+
+.student{
+    justify-content: center;
+    display: flex;
+    margin-right: 10px;
+    background-color: var(--student-and-admin-bg-color);
+    flex-basis: 338px;
+    flex-shrink: 1;
+    height: 316px;
+    padding: 20px;
+    border: 3px solid #2563EB;
+    border-radius: 40px;
+}
+
+:hover.student{
+    transform: scale(1.04);
+    transition: all 250ms ease-in;
+    background-color: var(--hover-color);
+}
+
+.student_conteaneer{
+    justify-content: center;
+    width: 240px;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.student_img{
+    width: 150px;
+    height: 140px;
+    margin: 0;
+    padding: 0;
+}
+
+.student_title{
+    margin: 0;
+    font-size: 23px;
+    line-height: 36px;
+    color: var(--text-color-dark);
+}
+
+.student_text{
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--text-color-dark);
+    font-style: normal;
+    text-align: center;
+}
+
+.img{
+    flex-basis: 670px;
+    background-color: var(--primary-bg-color);
+    flex-shrink: 1;
+}
+
+.img__img{
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    justify-content: left;
+    margin-left: 50px;
+    gap: 20px;
+
+
+}
+
+.footer__section1{
+
+    direction: ltr;
+}
+
+.footer__section1__title{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--text-color);
+}
+
+.footer__section1__text{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-color);
+}
+
+.footer__section2{
+    
+}
+.footer__section2__image{
+
+}
+

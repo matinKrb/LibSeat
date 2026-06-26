@@ -1,0 +1,490 @@
+@media (min-width: 900px) {
+    .hamburger-menu--active {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@media (max-width: 1400px) {
+    .filterSearch-title {
+        font-size: 1.8rem;
+    }
+
+    .fliterStatus-btns--desktop {
+        font-size: 1.4rem;
+        margin-left: 5rem;
+    }
+
+    .fliterTime-btns--desktop {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .nav-items {
+        width: 45rem;
+    }
+
+    .nav-item {
+        font-size: 1.5rem;
+    }
+
+    .footerCols {
+        width: calc(100% - 42rem);
+        gap: clamp(1rem, 2vw, 5rem);
+
+    }
+
+    .Login-btn {
+        padding: 0.3rem 2rem;
+    }
+
+    .theme-switch-wrapper {
+        transform: scale(0.8);
+    }
+
+    .page-title {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    body {}
+
+    .nav-items {
+        width: 40rem;
+    }
+
+    .nav-item {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .hamburger-menu--active {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .nav-logo {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .nav-logo__text {
+        margin-top: 0;
+        margin-left: 0.7rem;
+    }
+
+    .nav-logo__text-title {
+        font-size: 1.9rem;
+    }
+
+    .nav-logo__text-content {
+        display: none;
+    }
+
+    .Login-btn {
+        display: none;
+    }
+
+    .page-title {
+        text-align: center;
+    }
+
+    .filterSearch-top {
+        margin-bottom: 1rem;
+    }
+
+    .filterSearch-title {
+        display: none;
+    }
+
+    .searchBox {
+        width: 100%;
+    }
+
+    .searchBox-svg {}
+
+    .searchBox-input {}
+
+    .searchBox-input::placeholder {}
+
+    .filterSearch-bottom {
+        display: none;
+    }
+
+    .fliterStatus-btns--desktop {
+        display: none;
+    }
+
+    .fliterStatus-btn {}
+
+    .fliterStatus-btn--active {}
+
+    .fliterTime-btns--desktop {
+        display: none;
+    }
+
+    .fliterTime-btn {}
+
+    .mobileFilters-btn {
+        display: flex;
+    }
+
+    /* ============================================================
+    Footer
+  ============================================================ */
+
+
+    .footer-newsletter__text h3 {
+        font-size: 2.2rem;
+    }
+
+    .footer-newsletter__form {
+        padding: 0.5rem 0.7rem;
+    }
+
+    .footerCols {
+        width: 100%;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .footer-col--about {
+        min-width: 80%;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .footer-col--about h2 {
+        font-size: 1.8rem;
+    }
+
+    .footer-col__title {
+        font-size: 1.8rem;
+    }
+
+
+}
+
+@media (max-width: 835px) {
+    /* ============================================================
+    Footer
+  ============================================================ */
+
+    .site-footer {}
+
+    /* ============================================================
+     NEWSLETTER SECTION
+  ============================================================ */
+    .footer-newsletter {}
+
+    .footer-newsletter__inner {
+        justify-content: center;
+    }
+
+    .footer-newsletter__text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-newsletter__text h3 {}
+
+    .footer-newsletter__text p {}
+
+    .footer-newsletter__form {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .footer-newsletter__input {}
+
+    .footer-newsletter__input::placeholder {}
+
+    .footer-newsletter__input:focus {}
+
+    .footer-newsletter__btn {}
+
+    .footer-newsletter__btn:hover {}
+
+    .footer-newsletter__btn svg {}
+
+    /* ============================================================
+     MAIN FOOTER COLUMNS
+  ============================================================ */
+    .footer-main {}
+
+    .footer-main__inner {}
+
+    /* ---- About Column (right, widest) ---- */
+    .footer-col--about {}
+
+    .footer-col--about h2 {
+        font-size: 2.2rem;
+    }
+
+    .footer-col--about p {}
+
+    .footerCols {}
+
+    .footer-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 25rem;
+    }
+
+    /* ---- Quick Links Column ---- */
+    .footer-col--links {}
+
+    .footer-col__title {}
+
+    .footer-col__title::after {}
+
+    .footer-col__links-list {}
+
+    .footer-col__links-list li a {}
+
+    .footer-col__links-list li a::before {}
+
+    .footer-col__links-list li a:hover {}
+
+    /* ---- Contact Column ---- */
+    .footer-col--contact {}
+
+    .footer-contact-list {}
+
+    .footer-contact-list li {}
+
+    .footer-contact-list li .contact-icon {}
+
+    /* ============================================================
+     BOTTOM BAR
+  ============================================================ */
+    .footer-bottom {}
+
+    .footer-bottom__inner {}
+
+    /* Logos */
+    .footer-bottom__logos {}
+
+    .footer-logo-badge {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    /* App Download */
+    .footer-bottom__apps {}
+
+    .footer-bottom__apps-label {}
+
+    .footer-bottom__app-buttons {}
+
+    .app-btn {}
+
+    .app-btn:hover {}
+
+    .app-btn svg {}
+
+    /* Social + Copyright */
+    .footer-bottom__right {}
+
+    .footer-social {}
+
+    .footer-social__label {}
+
+    .footer-social__links {}
+
+    .social-link {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .social-link:hover {}
+
+    .footer-copyright {}
+}
+
+
+@media (max-width: 768px) {
+
+    .seatsWrapper {
+        width: 100%;
+        height: 38rem;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    .seatsRow {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 3rem;
+        min-width: auto;
+        min-height: 90.5rem;
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    .seats {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        gap: 1.5rem;
+        justify-content: space-between;
+        /* در دسکتاپ فضا رو پر میکنه */
+    }
+
+    .seat {
+        min-width: 4.7rem;
+        padding: 0.5rem 1rem;
+        white-space: nowrap;
+        flex-shrink: 0;
+        font-size: 1.4rem;
+    }
+
+    .footer-newsletter {
+        padding: 20px 20px;
+    }
+
+    .footer-newsletter__inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-newsletter__form {
+        width: 100%;
+    }
+
+    .footer-newsletter__input {
+        width: 100%;
+        flex: 1;
+    }
+
+    .footer-main {
+        padding: 32px 20px;
+    }
+
+    .footer-main__inner {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .footerCols {
+        margin-top: 4rem;
+    }
+
+    .footer-col--about {
+        max-height: 8rem;
+    }
+
+    .footer-bottom {
+        padding: 20px;
+    }
+
+    .footer-bottom__inner {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-bottom__right {
+        align-items: center;
+    }
+
+
+}
+
+@media (max-width: 625px) {
+    .state-cards {
+        flex-direction: column;
+    }
+
+    .state-card {
+        width: 80%;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width:614px){
+    .nav-logo__img{
+        width: 3rem;
+    }
+    .nav-logo__text-title {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 540px) {
+    .state-card{
+        width: 100%;
+    }
+    .seatsWrapper {
+        justify-content: space-between;
+    }
+
+    .seatsGuides {
+        gap: 1.5rem;
+    }
+
+    .seatsGuide {
+        font-size: 1.2rem;
+    }
+
+    .seatsGuide::before {
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+
+    .footer-col--about h2 {
+        font-size: 2rem;
+    }
+
+    .footer-col--about p {
+        font-size: 1.2rem;
+    }
+
+    .footer-col__title {
+        font-size: 1.6rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .seat {
+        min-width: 4rem;
+        height: auto;
+        padding: 0.5rem 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .seatsGuides {
+        gap: 1rem;
+    }
+}
+@media (max-width: 400px) {
+    .footerCols{
+      margin-top: 6rem;
+    }
+  }
+  @media (max-width: 362px) {
+    .footerCols{
+      margin-top: 7rem;
+    }
+  }

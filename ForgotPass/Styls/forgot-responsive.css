@@ -1,0 +1,166 @@
+/* ========================================
+   Tablet 
+   ======================================== */
+@media (max-width: 970px) {
+    body {
+        background-color: var(--color-bg-card);
+    }
+
+    .layout__container {
+        flex-direction: column;
+        gap: var(--spacing-lg);
+        margin: 2rem auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .top-bar {
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        max-width: 120rem;
+        padding-inline: 2rem;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .banner__img {
+        max-width: 44rem;
+    }
+
+    .card {
+        padding: var(--spacing-xl) 3.5rem;
+        max-width: 53rem;
+        gap: 2rem;
+    }
+
+    .card__title {
+        font-size: 3rem;
+        font-weight: 500;
+        margin-top: 2rem;
+    }
+
+    .card__description {
+        font-size: 1.8rem;
+    }
+
+    .form-label,
+    .btn {
+        font-size: 1.8rem;
+    }
+
+    .form-input {
+        font-size: 1.3rem;
+    }
+
+    .form-input::placeholder {
+        font-size: 1.5rem;
+        font-weight: 100;
+        color: var(--color-text);
+        opacity: 0.7;
+    }
+
+    .login-text {
+        font-size: 1.8rem;
+    }
+
+}
+
+/* ========================================
+   Mobile (480px and below)
+   ======================================== */
+@media (max-width: 576px) {
+
+
+    .container {
+        padding: var(--spacing-sm) var(--spacing-lg);
+    }
+
+    .layout {
+        width: 99%;
+        padding: 0;
+    }
+
+    .top-bar {
+        flex-direction: row-reverse;
+        gap: var(--spacing-xs);
+        justify-content: space-between;
+    }
+
+    .brand__name {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    .brand__logo {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .banner {
+        display: none;
+    }
+
+
+    .card {
+        padding: var(--spacing-md);
+        border: none;
+    }
+
+    .card:hover {
+        box-shadow: none;
+    }
+
+    .card__title {
+        font-size: 3rem;
+        font-weight: 600;
+
+    }
+
+    .card__description {
+        font-size: 1.8rem;
+        font-weight: 100;
+        margin-bottom: 2.7rem;
+    }
+
+    .form {
+        gap: 3.2rem;
+    }
+
+    .form-label {
+        font-size: 2.2rem;
+    }
+
+    .form-input {
+        padding: 0.75rem 0.875rem;
+        font-size: 2rem;
+    }
+
+    .btn {
+        padding: 0.7rem 1.1rem;
+        font-size: 2rem;
+    }
+
+    .login-text {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .container{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .card{
+        box-shadow: none;
+        padding-left: 0;
+        padding-right: 0;
+        min-width: 100%;
+    }
+    .login-text{
+        font-size: 1.6rem;
+    }
+}

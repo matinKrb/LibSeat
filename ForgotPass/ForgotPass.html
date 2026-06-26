@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بازیابی رمز عبور</title>
+    <link rel="icon" type="image/png" href="./icons/logo.png">
+    <link rel="stylesheet" href="./Styls/reset.css">
+    <link rel="stylesheet" href="./Styls/fonts.css">
+    <link rel="stylesheet" href="./Styls/Forgot-style.css">
+    <link rel="stylesheet" href="./Styls/forgot-responsive.css">
+    <script src="./scripts/forgot-them.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <!-- top bar -->
+            <div class="top-bar">
+                <div class="brand">
+                    <a href="../index.html" class="brand__name">LibSeat</a>
+                    <a href="../index.html" class="brand__logo-link">
+                        <img src="./icons/logo.svg" alt="LibSeat" class="brand__logo">
+                    </a>
+                </div>
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox">
+                        <div class="slider">
+                            <span class="ball">
+                                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"></circle>
+                                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                </svg>
+                                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- Main Layout -->
+        <main class="layout">
+
+            <!-- Left Side: banner -->
+            <div class="banner">
+                <div class="banner__img">
+                    <img src="./Images/forgot-pass.jpg" alt="">
+                </div>
+            </div>
+
+            <!-- Right Side: Form -->
+            <div class="card">
+                <h2 class="card__title">بازیابی رمز عبور</h2>
+                <p class="card__description">برای بازیابی رمز عبور، اطلاعات زیر را وارد کنید.</p>
+
+                <form class="form">
+                    <div class="form-group">
+                        <label class="form-label" for="studentId">
+                            شماره دانشجویی :
+                        </label>
+                        <div class="input-wrap">
+                            <input type="text" id="studentId" name="studentId" inputmode="numeric" pattern="[0-9]*"
+                                autocomplete="username" class="form-input" placeholder="شماره دانشجویی خود را وارد کنید"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="mobileNumber">
+                            شماره موبایل :
+                        </label>
+                        <div class="input-wrap">
+                            <input type="text" id="mobileNumber" name="mobileNumber" inputmode="numeric" pattern="[0-9]*"
+                                autocomplete="tel" class="form-input" placeholder="شماره موبایل خود را وارد کنید"
+                                required>
+                        </div>
+                    </div>
+
+                    <a href="../verify-identity/verify-identity.html" class="btn btn--primary">ارسال کد تایید</a>
+                    <p class="login-text">
+                        رمز عبور خود را به یاد دارید؟
+                        <a href="../login-page/login.html" class="link">وارد شوید</a>
+                    </p>
+                </form>
+            </div>
+
+        </main>
+    </div>
+</body>
+
+</html>
